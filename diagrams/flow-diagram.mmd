@@ -1,0 +1,14 @@
+flowchart TD
+  A[Mulai] --> B{Pilih jenis testing}
+  B -->|Web| C[Web Tests]
+  B -->|API| D[API Tests]
+  B -->|Mobile| E[Mobile Tests]
+
+  C --> F[Generate artifacts: screenshots/log]
+  D --> G[Generate artifacts: result/log]
+  E --> H[Generate artifacts: screenshots/log]
+
+  F --> I[Selesai]
+  G --> I
+  H --> I
+

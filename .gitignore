@@ -1,0 +1,16 @@
+node_modules/
+.playwright/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Test artifacts
+web-testing/screenshots/*.png
+mobile-testing/screenshots/*.png
+mobile-testing/screenshots/*.xml
+api-testing/result/*.json
+api-testing/result/*.txt
+web-testing/order-id.txt
+

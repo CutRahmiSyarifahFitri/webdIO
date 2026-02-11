@@ -1,0 +1,29 @@
+{
+  "name": "qa-automation-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "QA automation assessment: web, API, and mobile testing structure + runnable scripts",
+  "type": "module",
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "scripts": {
+    "web": "node web-testing/test-script.js",
+    "api": "node api-testing/api-tests.js",
+    "mobile": "wdio run mobile-testing/wdio.conf.cjs"
+  },
+  "dependencies": {
+    "playwright": "^1.50.1"
+  },
+  "devDependencies": {
+    "@wdio/appium-service": "^8.41.0",
+    "@wdio/cli": "^8.41.0",
+    "@wdio/globals": "^8.41.0",
+    "@wdio/local-runner": "^8.41.0",
+    "@wdio/mocha-framework": "^8.41.0",
+    "@wdio/spec-reporter": "^8.41.0",
+    "mocha": "^10.8.2",
+    "webdriverio": "^8.41.0"
+  }
+}
+
